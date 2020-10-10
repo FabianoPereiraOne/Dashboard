@@ -3,14 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina de Login</title>
+    <title>Criar Conta</title>
     <link rel="stylesheet" href="bibliotecas/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="bibliotecas/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/sb-admin.min.css">
     <script src="https://kit.fontawesome.com/59c1ffd9fc.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    
+<body class="bg-info">
+    <div class="container">
+        <div class="card card-register mx-auto mt-5 border-0">
+            <div class="card-header bg-success">
+                <h4 class="text-white">Criar Conta</h4>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="username">Nome:</label>
+                                <input class="form-control" placeholder="Digite seu Primeiro Nome" type="text" name="nome" id="username">
+                            </div>
+                            <div class="col-6">
+                                <label for="sobrenome">Sobrenome:</label>
+                                <input class="form-control" placeholder="Digite seu Segundo Nome" type="text" name="sobrenome" id="sobrenome">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input class="form-control" placeholder="Digite seu Email" type="email" name="e-mail" id="email">
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="pass1">Senha</label>
+                                <input type="password" class="form-control" placeholder="Digite uma senha" name="senha" id="pass1">
+                            </div>
+                            <div class="col-6">
+                                <label for="pass2">Confirmar Senha:</label>
+                                <input type="password" class="form-control" placeholder="Confirme sua senha" name="senha" id="pass2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-warning btn-block">Criar Conta</button>
+                    </div>
+                    <div class="form-group text-center">
+                        <a href="recuperar.html" class="d-block"><small>Esqueceu sua Senha?</small></a>
+                        <a href="login.html" class="d-block"><small>Login</small></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
     <script src="bibliotecas/jquery/jquery.min.js"></script>
     <script src="bibliotecas/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="bibliotecas/jquery-easing/jquery.easing.min.js"></script>
