@@ -9,50 +9,216 @@
     <link rel="stylesheet" href="css/sb-admin.min.css">
     <script src="https://kit.fontawesome.com/59c1ffd9fc.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-dark" id="page-top">
-   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-        <a href="index.html" class="navbar-brand text-white">ONE</a>
+<body class="bg-dark fixed-nav sticky-footer" id="page-top">
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" id="mainNav">
+        <a href="index.html" class="navbar-brand text-white">
+            <i class="fas fa-code"></i>
+            <span>Programador</span>
+        </a>
 
         <button class="navbar-toggler navbar-toggler-right" aria-expanded="false" data-toggle="collapse" data-target="#sidebarLeft" aria-controls="sidebarLeft" aria-label="Navegação Lateral">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div id="sidebarLeft" class="collapse navbar-collapse">
-            <ul class="navbar-nav navbar-sidenav">
+            <ul class="navbar-nav navbar-sidenav" id="sideNavLeft">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="fa fa-fw fa-dashboard"></i>
+                    <a href="#" class="nav-link mr-2 mr-lg-0">
+                        <i class="fa fa-fw fa-dashboard text-success"></i>
                         <span class="nav-link-text">Dashboard</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="fa fa-fw fa-table"></i>
+                    <a href="#" class="nav-link mr-2 mr-lg-0">
+                        <i class="fa fa-fw fa-table text-info"></i>
                         <span class="nav-link-text">Tabelas</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="fa fa-fw fa-wrench"></i>
+                    <a href="#linkComponentes" class="nav-link nav-link-collapse collapse mr-2 mr-lg-0" data-toggle="collapse" data-parent="#sideNavLeft">
+                        <i class="fa fa-fw fa-wrench text-light"></i>
                         <span class="nav-link-text">Componentes</span>
                     </a>
+                    <ul class="sidenav-third-level collapse" id="linkComponentes">
+                        <li>
+                            <a  href="#linkStat" class="nav-link nav-link-collapse collapse" data-toggle="collapse">Ferramentas</a>
+
+                            <ul class="sidenav-third-level collapse" id="linkStat">
+                                <li class="nav-item">
+                                    <a href="#linkDay" class="nav-link nav-link-collapse collapse" data-toggle="collapse">Estatisticas</a>
+
+                                    <ul class="sidenav-third-level collapse" id="linkDay">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Semanal</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Mensal</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Anual</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Configuração</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Conta</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="fa fa-fw fa-file"></i>
+                    <a href="#linkPaginas" class="nav-link nav-link-collapse collapse mr-2 mr-lg-0" data-toggle="collapse" data-parent="#sideNavLeft">
+                        <i class="fa fa-fw fa-file text-warning"></i>
                         <span class="nav-link-text">Paginas</span>
                     </a>
+                    <ul class="sidenav-second-level collapse" id="linkPaginas">
+                        <li>
+                            <a href="cadastrar.html" class="nav-link">Criar Conta</a>
+                        </li>
+                        <li>
+                            <a href="recuperar.html" class="nav-link">Recuperar Senha</a>
+                        </li>
+                        <li>
+                            <a href="login.html" class="nav-link">Login</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
             <ul class="navbar-nav sidenav-toggler">
                 <li class="nav-item  text-center">
                     <a href="#" id="sidenavToggler" class="nav-link">
-                        <i class="fa fa-fw fa-angle-left"></i>
+                        <i class="fas fa-arrow-circle-left text-light"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto" id="icons">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle mr-2 mr-lg-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="msg" data-parent="#icons">
+                        <i class="fas fa-envelope"></i>
+                        <span class="d-lg-none">
+                            Mensagens
+                            <span class="badge badge-primary badge-pill">
+                                3 novas mensagens
+                            </span>
+                        </span>
+                        <span class="indicator text-primary d-none d-lg-block">
+                            <i class="fas fa-user-circle"></i>
+                        </span>
+                    </a>
+
+                    <div class="dropdown-menu mr-2 mr-lg-0" aria-labelledby="msg">
+                        <h6 class="dropdown-header text-dark">Mensagens</h6>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <strong>Fabiano Pereira</strong>
+                            <span class="text-muted float-right small">12:15</span>
+                            <div class="dropdown-message small">
+                                Seja bem vindo ao dashboard programador. Espero que aproveite as incriveis funcionalidades.
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <strong>Lucas Silva</strong>
+                            <span class="float-right text-muted small">Ontem</span>
+                            <div class="dropdown-message">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa sapiente modi iste dolorem illo magni exercitationem minus, consequuntur amet. Commodi ad deleniti quos totam reiciendis optio harum natus corporis rerum.
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <strong>Camile Martins</strong>
+                            <span class="text-muted float-right small">12/09/2020</span>
+                            <div class="dropdown-message">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis eaque rerum incidunt magnam dolores vel, unde similique a quia facilis nisi placeat consectetur nobis at soluta iste aliquid eum obcaecati!
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item text-info">
+                            <span>Ver todas as mensagens</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle mr-2 mr-lg-0" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" data-parent="#icons">
+                        <i class="fa fa-bell"></i>
+                        <span class="d-lg-none">
+                            Notificações
+                            <span class="badge badge-pill badge-warning">
+                                2 alertas
+                            </span>
+                        </span>
+                        <span class="indicator text-warning d-none d-lg-block">
+                            <i class="fas fa-info-circle"></i>
+                        </span> 
+                    </a>
+                    <div class="dropdown-menu">
+                        <h1 class="dropdown-header text-dark">Notificações</h1>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item text-success">
+                            <i class="fa fa-arrow-up"></i>
+                            <span>Atualizações</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item text-warning">
+                            <i class="fa fa-arrow-down"></i>
+                            <span>Problemas</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item text-danger">
+                            <i class="fas fa-trash-alt"></i>
+                            <span>Excluir notificações</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0 mr-2">
+                        <div class="input-group">
+                            <input type="search" placeholder="Pesquisar por..." class="form-control">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </form>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-sign-out text-danger">Logout</i>
                     </a>
                 </li>
             </ul>
         </div>
    </nav>
+   <div class="content-wrapper">
+        <div class="container-fluid">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    Pagina Em Branco
+                </li>
+            </ol>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="text-warning">Welcome ViewPort</h1>
+                    <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis saepe dolorum eum harum quod magnam, expedita tenetur sed ipsam fuga error veritatis nisi in alias quisquam fugit non. Illo, repellendus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias exercitationem minima quibusdam accusantium eveniet, reprehenderit quam voluptas vero quos animi. Deleniti ut hic ex ducimus! Reprehenderit vel incidunt facere deserunt!</p>
+                </div>
+            </div>
+        </div>
+        <footer class="sticky-footer  bg-info">
+            <div class="container">
+                <div class="text-center text-light">
+                    <small>CopyRight &copy; 2020 by Fabiano Pereira</small>
+                </div>
+            </div>
+        </footer>
+   </div>
 
     <script src="bibliotecas/jquery/jquery.min.js"></script>
     <script src="bibliotecas/bootstrap/js/bootstrap.bundle.min.js"></script>
