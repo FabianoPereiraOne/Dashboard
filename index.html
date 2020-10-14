@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="bibliotecas/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="bibliotecas/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/sb-admin.min.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/59c1ffd9fc.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-dark fixed-nav sticky-footer" id="page-top">
+<body class="bg-dark fixed-nav fixed-sticky-footer" id="page-top">
    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" id="mainNav">
         <a href="index.html" class="navbar-brand text-white">
             <i class="fas fa-code"></i>
@@ -25,19 +26,19 @@
                 <li class="nav-item">
                     <a href="#" class="nav-link mr-2 mr-lg-0">
                         <i class="fa fa-fw fa-dashboard text-success"></i>
-                        <span class="nav-link-text">Dashboard</span>
+                        <span class="nav-link-text text-white">Dashboard</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link mr-2 mr-lg-0">
+                    <a href="tabelas.html" class="nav-link mr-2 mr-lg-0">
                         <i class="fa fa-fw fa-table text-info"></i>
-                        <span class="nav-link-text">Tabelas</span>
+                        <span class="nav-link-text text-white">Tabelas</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#linkComponentes" class="nav-link nav-link-collapse collapse mr-2 mr-lg-0" data-toggle="collapse" data-parent="#sideNavLeft">
-                        <i class="fa fa-fw fa-wrench text-light"></i>
-                        <span class="nav-link-text">Componentes</span>
+                        <i class="fa fa-fw fa-wrench text-white"></i>
+                        <span class="nav-link-text text-white">Componentes</span>
                     </a>
                     <ul class="sidenav-third-level collapse" id="linkComponentes">
                         <li>
@@ -73,7 +74,7 @@
                 <li class="nav-item">
                     <a href="#linkPaginas" class="nav-link nav-link-collapse collapse mr-2 mr-lg-0" data-toggle="collapse" data-parent="#sideNavLeft">
                         <i class="fa fa-fw fa-file text-warning"></i>
-                        <span class="nav-link-text">Paginas</span>
+                        <span class="nav-link-text text-white">Paginas</span>
                     </a>
                     <ul class="sidenav-second-level collapse" id="linkPaginas">
                         <li>
@@ -176,10 +177,10 @@
                 </li>
                 <li class="nav-item">
                     <form class="form-inline my-2 my-lg-0 mr-2">
-                        <div class="input-group">
-                            <input type="search" placeholder="Pesquisar por..." class="form-control">
+                        <div class="input-group mt-2 mr-2">
+                            <input type="search" placeholder="Pesquisar por..." class="form-control-md rounded">
                             <span class="input-group-btn">
-                                <button class="btn btn-primary">
+                                <button class="btn rounded btn-primary btn-sm pt-0 pb-0">
                                     <i class="fa fa-search"></i>
                                 </button>
                             </span>
@@ -187,31 +188,77 @@
                     </form>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="fa fa-sign-out text-danger">Logout</i>
+                    <a class="nav-link rounded p-1 mt-2" href="#">
+                        <i class="fa fa-sign-out text-warning">Logout</i>
                     </a>
                 </li>
             </ul>
         </div>
    </nav>
-   <div class="content-wrapper">
-        <div class="container-fluid">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item">
-                    <a href="index.html">Home</a>
-                </li>
-                <li class="breadcrumb-item">
-                    Pagina Em Branco
-                </li>
-            </ol>
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h1 class="text-warning">Welcome ViewPort</h1>
-                    <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis saepe dolorum eum harum quod magnam, expedita tenetur sed ipsam fuga error veritatis nisi in alias quisquam fugit non. Illo, repellendus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias exercitationem minima quibusdam accusantium eveniet, reprehenderit quam voluptas vero quos animi. Deleniti ut hic ex ducimus! Reprehenderit vel incidunt facere deserunt!</p>
+   <div class="content-wrapper rounded p-0">
+        <div class="container-fluid" id="painel_noticiais">
+            <div class="row mt-4">
+                <div class="col-xl-4 col-sm-6 mb-3">
+                    <div class="card" id="card_1">
+                        <div class="card-header">
+                            <h5>NLW Ao Vivo <i class="text-danger fa fa-fw fa-circle"></i> </h5> 
+                            
+                        </div>
+                        <div class="card-body">
+                            <div class="card-body-icon text-danger">
+                                <i class="fa fa-fw fa-youtube"></i>
+                            </div>
+                            <p class="small">Uma semana completa de conteudo para você subir para o proximo level na programação, entao ta esperando oque? Bora codar.</p>
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=cqDBYUIxrVY" class="card-footer text-white clear-fix z-1 small" target="_blank">
+                            <span class="float-left">Ver detalhes</span>
+                            <span class="float-right">
+                                <i class="fa fa-fw fa-angle-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 mb-3">
+                    <div class="card" id="card_2">
+                        <div class="card-header">
+                            <h5>Projetos incriveis no Github</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-body-icon text-dark">
+                                <i class="fa fa-fw fa-github"></i>
+                            </div>
+                            <p class="small">Lá você vai encontrar desafios incriveis para testar suas capacidades e conseguir evoluir ao maximo junto com outros programadores.</p>
+                        </div>
+                        <a href="https://github.com/gustavoguanabara" class="card-footer clear-fix text-white small z-1" target="_blank">
+                            <span class="float-left">Ver detalhes</span>
+                            <span class="float-right">
+                                <i class="fa fa-fw fa-angle-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6">
+                    <div class="card" id="card_3">
+                        <div class="card-header">
+                            <h5>Curso de HTML5 e CSS3</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-body-icon text-warning">
+                                <i class="fa fa-fw fa-html5"></i>
+                            </div>
+                            <p class="small">Lá você vai encontrar desafios incriveis para testar suas capacidades e conseguir evoluir ao maximo junto com outros programadores.</p>
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=1" class="card-footer text-white clear-fix small z-1" target="_blank">
+                            <span class="float-left">Ver detalhes</span>
+                            <span class="float-right">
+                                <i class="fa fa-fw fa-angle-right"></i>
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-        <footer class="sticky-footer  bg-info">
+        <footer class="sticky-footer bg-dark" id="footer">
             <div class="container">
                 <div class="text-center text-light">
                     <small>CopyRight &copy; 2020 by Fabiano Pereira</small>
@@ -219,6 +266,8 @@
             </div>
         </footer>
    </div>
+
+   
 
     <script src="bibliotecas/jquery/jquery.min.js"></script>
     <script src="bibliotecas/bootstrap/js/bootstrap.bundle.min.js"></script>
